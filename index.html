@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SimpleForm</title>
+</head>
+<body>
+    <form id="form">
+        <div>
+            <input type="tel" id="tel" required>
+        </div>
+        <div id="part2">
+            <div>
+                <input type="button" onclick="updateBtn(this);" value="Тыкс" >
+            </div>
+        </div>
+        <div id="part3">
+            <div>
+                <input type="file" accept="image/*" required>
+                <div>
+                    <input type="button" value="+" onclick="addPart3(this);">
+                    <input type="button" value="-" onclick="deletePart3(this);">
+                </div>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Отправить">
+        </div>
+    </form>
+    <script src="/scripts/scripts.js"></script>
+</body>
+</html>
